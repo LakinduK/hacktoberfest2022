@@ -17,7 +17,7 @@ body {
 }
 .bg-img,#bg-img {
   /* The image used */
-  background-image: url("src/H22/H22-Banners-Dark.png");
+  background-image: url("src/H22/H22-Banners-Dark (1).png");
 
   /* Full height */
   height: 100vh;
@@ -142,4 +142,7 @@ h3 {
   text-decoration: none;
 }
 
-
+.inner-footer{
+  color: #eee;
+  background-color: transparent;
+}
