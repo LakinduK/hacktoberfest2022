@@ -119,3 +119,27 @@ h3 {
   display: inline-block;
   font-size: 16px;
 }
+
+.footer {
+  padding: 5rem 3rem;
+  background-color: rgba(24, 24, 29, 0.959);
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+
