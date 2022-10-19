@@ -15,7 +15,7 @@ body {
   padding-bottom: 10vh;
 
 }
-.bg-img {
+.bg-img,#bg-img {
   /* The image used */
   background-image: url("src/H22/H22-Banners-Dark.png");
 
