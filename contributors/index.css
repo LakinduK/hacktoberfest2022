@@ -142,4 +142,42 @@ h3 {
   text-decoration: none;
 }
 
+.collapsible
+{
+  visibility: hidden;
+}
+.btn-nav{
+  margin:10px;
+  
+}
 
+.collapse{
+  padding: 10px;
+  
+}
+
+.dark-switch{
+  width: 150px;
+  margin-top:-10px;
+  margin-left: -5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .navb{
+    padding-left: 85%;
+  }
+
+  .hide
+  {
+    visibility: hidden;
+  }
+
+  .container{
+    padding: 0;
+    height: 60px;
+  }
+
+  .collapsible{
+    visibility: visible;
+  }
+}
