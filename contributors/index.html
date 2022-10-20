@@ -22,13 +22,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark non-collapsible">
     <div class="container">
       <a class="text-light d-flex flex-row align-items-center navbar-brand" href="#">
         <img id="H22-image" src="src/H22/H22-logo-dark.png" alt="" height="40" class="d-inline-block align-text-top navlogo" />&nbsp;
         Hacktoberfest-2022
       </a>
-      <ul class="d-flex flex-row align-items-center nav navbar-nav navbar-right">
+      <ul class="hide d-flex flex-row align-items-center nav navbar-nav navbar-right">
         <li class="me-3">
           <div class="btn-nav">
             <a class="p-2 btn btn-primary btn-small navbar-btn" href="https://github.com/LakinduK/hacktoberfest2022">
@@ -48,12 +48,49 @@
           <a class="nav-link" href="#">
             <div class="bg-light p-2 rounded-3 custom-control custom-switch">
               <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-              <label class="text-dark custom-control-label" for="darkSwitch">Dark Theme 🌚</label>
+              <label class=" text-dark custom-control-label" for="darkSwitch">Dark Theme 🌚</label>
             </div>
           </a>
           <script src="src/dark-mode-switch.min.js"></script>
         </li>
       </ul>
+    </div>
+  </nav>
+  
+  <div class="collapse bg-dark" id="navbarToggleExternalContent">
+    <ul class="align-items-left">
+      <li class="me-3">
+        <div class="btn-nav">
+          <a class="p-2 btn btn-primary btn-small navbar-btn" href="https://github.com/LakinduK/hacktoberfest2022">
+            <i class="fa fa-github"></i> &nbsp; Contribute
+          </a>
+        </div>
+      </li>
+      <li class="me-3">
+        <div class="btn-nav">
+          <a class="p-2 btn btn-warning btn-small navbar-btn"
+            href="https://lakinduk.github.io/hacktoberfest2021/contributors/">
+            <i class="fa fa-github"></i> &nbsp; Hacktoberfest-2021
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="dark-switch bg-light p-2 rounded-3 custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="text-dark custom-control-label" for="darkSwitch">Dark Theme 🌚</label>
+          </div>
+        </a>
+        <script src="src/dark-mode-switch.min.js"></script>
+      </li>
+    </ul>
+  </div>
+  <nav class="collapsible navbar navbar-dark bg-dark">
+    <div class="navb">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
   <div id="tsparticles"></div>
@@ -121,13 +158,14 @@
       </li>
     </ul>
     <section class="p-3">
-      <div class="container text-center text-light">
-        <p>
+      <div class=" container text-center text-light" >
+        <p class="inner-footer">
           made with <spam id="heart">♥</spam> by <a href="https://lakinduk.me">LakinduK</a> |
           2022
         </p>
       </div>
     </section>
+    </footer>
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
