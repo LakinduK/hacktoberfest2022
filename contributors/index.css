@@ -17,7 +17,7 @@ body {
 }
 .bg-img,#bg-img {
   /* The image used */
-  background-image: url("src/H22/H22-Banners-Dark (1).png");
+  background-image: url("src/H22/H22-Banners-Dark.jpg");
 
   /* Full height */
   height: 100vh;
@@ -82,7 +82,7 @@ h3 {
 
   .bg-img {
     /* The image used */
-    background-image: url("src/H22/H22-BannersMobile-dark.png")!important;
+    background-image: url("src/H22/H22-BannersMobile-dark.jpg")!important;
 
     /* Full height */
     height: 100vh;
@@ -189,4 +189,5 @@ h3 {
   color: #eee;
   background-color: transparent;
 
+}
 }
