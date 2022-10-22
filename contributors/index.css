@@ -124,6 +124,8 @@ h3 {
 .footer {
   padding: 5rem 3rem;
   background-color: rgba(24, 24, 29, 0.959);
+  color: #eee;
+
 }
 
 .footer__nav {
@@ -141,8 +143,8 @@ h3 {
 
 .footer__link {
   font-size: 1.6rem;
-  color: #eee;
   text-decoration: none;
+  color: inherit;
 }
 
 
