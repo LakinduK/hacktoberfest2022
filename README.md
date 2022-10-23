@@ -1,6 +1,6 @@
 # Hacktoberfest2022
  
-![banner08BLlogo](https://github.com/LakinduK/hacktoberfest2022/blob/main/contributors/src/H22/H22-Banners-Dark.png)
+![banner08BLlogo](https://github.com/LakinduK/hacktoberfest2022/blob/main/contributors/src/H22/H22-Banners-Dark.jpg)
 
 ## Make your contributions in order to complete hacktoberfest challenge! 
 
