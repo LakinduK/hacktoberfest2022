@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+        <!-- Icons CDN -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <!-- Dark Mode CSS -->
@@ -94,7 +95,7 @@
     </ul>
   </div>
   
-  <div id="tsparticles"></div>
+
 
   <!--Flower frames added to the left and right border-->
   <!-- <div class="pointer-events-none animated hidden xl:block absolute top-80 right-16 opacity-5 transform rotate-180">
@@ -120,6 +121,7 @@
 
       <div class="row" id="contributors"></div>
     </div>
+    <div style="position: relative; pointer-events: visible;" id="tsparticles"></div>
   </section>
   <!-- How to  -->
   <section class=" bg-dark text-light p-2 p-sm-0 text-center">
@@ -132,7 +134,7 @@
       </span> </br>
       <div class="cont">
 
-        <a style="margin-top: 5vh; " class="p-2 btn md-3 btn-primary btn-small "
+        <a style="margin-top: 5vh;margin-bottom: 5vh; " class="p-2 btn md-3 btn-primary btn-small "
           href="https://github.com/LakinduK/hacktoberfest2022">
           <i class="fa fa-github"></i> &nbsp; Contribute
         </a>
@@ -140,33 +142,40 @@
     </div>
   </section>
 
-  
-  <footer class="footer" id="footer">
-    <ul class="footer__nav">
-      <li class="footer__item">
-        <a class="footer__link" href="#">About</a>
-      </li>
-      
-      <li class="footer__item">
-        <a class="footer__link" href="#">Terms of Use</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Privacy Policy</a>
-      </li>
 
-      <li class="footer__item">
-        <a class="footer__link" href="#">Contact Us</a>
-      </li>
-    </ul>
-    <section class="p-3">
-      <div class=" container text-center text-light" >
-        <p class="inner-footer">
-          made with <spam id="heart">♥</spam> by <a href="https://lakinduk.me">LakinduK</a> |
-          2022
-        </p>
+
+
+
+<!-- Footer Start -->
+<div class="row">
+<footer class="cont">
+
+  <ul class="icons" style="margin-left: -26px;">
+      <li><a href="https://twitter.com/lakinduk/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="https://www.linkedin.com/in/lakinduk/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="https://www.facebook.com/lakindu.kariyawasam/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/lakindu_yk/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+  <ul class="menu" style="margin: 0;padding:0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://github.com/LakinduK" target="_blank">Contact</a></li>
+          <li><a href="https://github.com/LakinduK" target="_blank">About</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+  </ul>
+      <div class="footer-copyright">
+          <p>Made with <span id="heart" style="color: red;">♥</span> by <a href="https://lakinduk.me" style="text-decoration:none; color:#272727; font-weight:600;cursor: pointer;">LakinduK</a> |
+            2022</p>
       </div>
-    </section>
-    </footer>
+      <div class="row">
+
+      </div>
+</footer>
+</div>
+
+<!-- Footer End -->
+
+
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
