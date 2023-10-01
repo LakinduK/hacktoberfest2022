@@ -19,12 +19,42 @@
   <!-- favicon -->
   <link rel="shortcut icon" href="./src/H22/H22-logo-light.png" type="image/png">
 
+  <style>
+    /* Add custom CSS here for further styling */
+
+    /* Mobile-friendly adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navlogo {
+        height: auto;
+      }
+
+      .btn-nav {
+        margin-top: 10px;
+      }
+
+      #navbarToggleExternalContent {
+        padding-top: 70px; /* To account for the fixed navbar */
+      }
+
+      .section2,
+      .section3 {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 
-<body style="position: sticky;">
-  <nav class="navbar navbar-dark bg-dark non-collapsible" >
-    <div style="position: sticky;" class="container">
-      <a class="text-light d-flex flex-row align-items-center navbar-brand" href="#">
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="text-light navbar-brand" href="#">
         <img id="H22-image" src="src/H22/H22-logo-dark.png" alt="" height="40" class="d-inline-block align-text-top navlogo" />&nbsp;
         Hacktoberfest-2022
       </a>
@@ -55,16 +85,18 @@
         </li>
         <li class="me-3">
           <div class="btn-nav">
-            <a class="p-2 btn btn-secondary btn-small navbar-btn"
-              href="https://lakinduk.me">
+            <a class="p-2 btn btn-secondary btn-small navbar-btn" href="https://lakinduk.me">
               <i class="fa fa-github"></i> &nbsp; Creator
             </a>
           </div>
         </li>
       </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
-  
+
   <div class="collapse bg-dark" id="navbarToggleExternalContent">
     <ul class="align-items-left">
       <li class="me-3">
@@ -91,24 +123,10 @@
         </a>
         <script src="src/dark-mode-switch.min.js"></script>
       </li>
-      <li class="collapsible navbar navbar-dark bg-dark">
-        <div class="navb">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </li>
     </ul>
   </div>
-  
-  <div id="tsparticles"></div>
 
-  <!--Flower frames added to the left and right border-->
-  <!-- <div class="pointer-events-none animated hidden xl:block absolute top-80 right-16 opacity-5 transform rotate-180">
-      <img src = "src/flower-frame.svg" alt="Left Flower" style="transform: scaleX(-1); position: absolute;"/>
-      <img src = "src/flower-frame.svg" alt="Right Flower" style="float:right"/>
-    </div> -->
+  <div id="tsparticles"></div>
 
   <section class="bg-dark text-light p-5 text-center bg-img" id="bg-img">
     <div class="container text-light p-3">
@@ -119,8 +137,7 @@
     </div>
   </section>
 
-  <!-- Contributors list -->
-  <section class=" bg-dark text-light p-2 p-sm-0 text-center">
+  <section class="bg-dark text-light p-2 p-sm-0 text-center" style="display: flex; flex-wrap: wrap;">
     <div class="section2 container" id="wrap">
       <h3 style="font-family: 'Poppins', sans-serif">
         Thank you for your contributions 😎
@@ -129,57 +146,32 @@
       <div class="row" id="contributors"></div>
     </div>
   </section>
-  <!-- How to  -->
-    <section class=" bg-dark text-light p-2 p-sm-0 text-center">
+
+  <section class="bg-dark text-light p-2 p-sm-0 text-center">
     <div class="section3 container" id="wrap">
       <h3 style="font-family: 'Poppins', sans-serif">
         How to join the contribution List ? 🤔
       </h3>
       <span>
         Simply click the contribute button at the navbar.
-      </span> </br>
-     
+      </span>
     </div>
   </section>
 
-  
   <footer class="footer" id="footer">
-    <!-- <ul class="footer__nav">
-      <li class="footer__item">
-        <a class="footer__link" href="#">About</a>
-      </li>
-      
-      <li class="footer__item">
-        <a class="footer__link" href="#">Terms of Use</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link" href="#">Privacy Policy</a>
-      </li>
-
-      <li class="footer__item">
-        <a class="footer__link" href="#">Contact Us</a>
-      </li>
-    </ul> -->
     <section class="p-3">
-      <div class=" container text-center text-light" >
+      <div class="container text-center text-light">
         <p class="inner-footer">
-          made with <spam id="heart">♥</spam> by LakinduK</a> |
+          made with <spam id="heart">♥</spam> by LakinduK |
           2022
         </p>
       </div>
     </section>
-    </footer>
-  <!-- scripts -->
+  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-
-  <!-- script fot bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- script for dark mode -->
   <script src="src/dark-mode-switch.min.js"></script>
-
   <script type="text/javascript" src="index.js"></script>
   <script src="src/tsparticles.min.js"></script>
   <script src="app.js"></script>
