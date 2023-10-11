@@ -14,19 +14,18 @@
   <link rel="stylesheet" href="src/dark-mode.css" />
 
   <link rel="stylesheet" href="./index.css" />
-  <title>Hacktoberfest-2022</title>
+  <title>Hacktoberfest-2023</title>
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./src/H22/H22-logo-light.png" type="image/png">
-
+  <link rel="shortcut icon" href="./src/H22/H22-logo-light.png" type="image/png" />
 </head>
 
-<body style="position: sticky;">
-  <nav class="navbar navbar-dark bg-dark non-collapsible" >
-    <div style="position: sticky;" class="container">
+<body style="position: sticky">
+  <nav class="navbar navbar-dark bg-dark non-collapsible">
+    <div style="position: sticky" class="container">
       <a class="text-light d-flex flex-row align-items-center navbar-brand" href="#">
-        <img id="H22-image" src="src/H22/H22-logo-dark.png" alt="" height="40" class="d-inline-block align-text-top navlogo" />&nbsp;
-        Hacktoberfest-2022
+        <img id="H22-image" src="src/H22/H22-logo-dark.png" alt="" height="40"
+          class="d-inline-block align-text-top navlogo" />&nbsp; Hacktoberfest-2023
       </a>
       <ul class="hide d-flex flex-row align-items-center nav navbar-nav navbar-right">
         <li class="me-3">
@@ -48,15 +47,14 @@
           <a class="nav-link" href="#">
             <div class="bg-light p-2 rounded-3 custom-control custom-switch">
               <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-              <label class=" text-dark custom-control-label" for="darkSwitch">Dark Theme 🌚</label>
+              <label class="text-dark custom-control-label" for="darkSwitch">Dark Theme 🌚</label>
             </div>
           </a>
           <script src="src/dark-mode-switch.min.js"></script>
         </li>
         <li class="me-3">
           <div class="btn-nav">
-            <a class="p-2 btn btn-secondary btn-small navbar-btn"
-              href="https://lakinduk.me">
+            <a class="p-2 btn btn-secondary btn-small navbar-btn" href="https://lakinduk.me">
               <i class="fa fa-github"></i> &nbsp; Creator
             </a>
           </div>
@@ -64,7 +62,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <div class="collapse bg-dark" id="navbarToggleExternalContent">
     <ul class="align-items-left">
       <li class="me-3">
@@ -93,15 +91,15 @@
       </li>
       <li class="collapsible navbar navbar-dark bg-dark">
         <div class="navb">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </li>
     </ul>
   </div>
-  
+
   <div id="tsparticles"></div>
 
   <!--Flower frames added to the left and right border-->
@@ -120,7 +118,7 @@
   </section>
 
   <!-- Contributors list -->
-  <section class=" bg-dark text-light p-2 p-sm-0 text-center">
+  <section class="bg-dark text-light p-2 p-sm-0 text-center">
     <div class="section2 container" id="wrap">
       <h3 style="font-family: 'Poppins', sans-serif">
         Thank you for your contributions 😎
@@ -130,25 +128,21 @@
     </div>
   </section>
   <!-- How to  -->
-    <section class=" bg-dark text-light p-2 p-sm-0 text-center">
+  <section class="bg-dark text-light p-2 p-sm-0 text-center">
     <div class="section3 container" id="wrap">
       <h3 style="font-family: 'Poppins', sans-serif">
         How to join the contribution List ? 🤔
       </h3>
-      <span>
-        Simply click the contribute button at the navbar.
-      </span> </br>
-     
+      <span> Simply click the contribute button at the navbar. </span>
     </div>
   </section>
 
-  
   <footer class="footer" id="footer">
     <!-- <ul class="footer__nav">
       <li class="footer__item">
         <a class="footer__link" href="#">About</a>
       </li>
-      
+
       <li class="footer__item">
         <a class="footer__link" href="#">Terms of Use</a>
       </li>
@@ -161,14 +155,13 @@
       </li>
     </ul> -->
     <section class="p-3">
-      <div class=" container text-center text-light" >
+      <div class="container text-center text-light">
         <p class="inner-footer">
-          made with <spam id="heart">♥</spam> by LakinduK</a> |
-          2023
+          made with <spam id="heart">♥</spam> by LakinduK | 2023
         </p>
       </div>
     </section>
-    </footer>
+  </footer>
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
@@ -187,7 +180,6 @@
   <script>
     let tsparticles = document.getElementById("tsparticles");
     setInterval(() => {
-
       tsparticles.childNodes.forEach((node) => {
         node.style.zIndex = "2";
         node.style.top = "80px";
